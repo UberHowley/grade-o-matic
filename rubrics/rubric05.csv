@@ -1,0 +1,22 @@
+Other
+++;;Great job passing the tests!
++;swedishpuzzle.py; Great job fixing all the errors and passing the swedishpuzzle tests!
++;vowelacious.py;Great job passing the vowelacious tests!
++;vowelacious.py;Good descriptions of the logic errors!
++;vowelacious.py;Real words for testing, nice!
+~; vowelacious.py;Those are some _special_ string choices!
+~ ;vowelacious.py;It would be good to see what you tested is_vowelacious() with!
+~;;Try to ensure that comments are never more than 80 characters long!
+swedishpuzzle.py
+-;swedishpuzzle.py;Looks like you labeled most, but not all of the FIXED errors you found.
+-;swedishpuzzle.py;Some syntax/runtimes errors were found and corrected, but not all.
+--;swedishpuzzle.py;It was required to find and fix the syntax errors so that this code runs.
+--;swedishpuzzle.py;Need to use FIXED comments to identify the lines that were fixed.
+vowelacious.py
+- ;vowelacious.py;The logic error explanations explain when the functions will fail, but not why that failure occurs.
+--; vowelacious.py; The logic error identified for attempt_1 is not correct.
+--; vowelacious.py; The logic error identified for attempt_2 is not correct.
+--; vowelacious.py; is_vowelacious() does not work.
+-; vowelacious.py; The elif statement in attempt_2 is the logic error but just turning it into an if statement does not solve the error. The first if statement and the else should not both be able to be executed.
+-; vowelacious.py; Test string number _ does not produce the expected output.
+

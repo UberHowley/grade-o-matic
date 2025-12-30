@@ -1,0 +1,21 @@
+GRADE SHEET FOR CS1 LAB 2 ("Day of the week")
+
+Requirements of this lab:
+   1. UTCDay(timeval)
+     * Computes correctly (see testing below, and comments if failure)
+     * Code is straightforward and readable
+     * Includes helpful comments
+   2. localDay(timeval, offset)
+     * Computes correctly
+     * Calls UTCDay
+     * Includes helpful comments
+   3. dayOfWeek(day)
+     * Computes correctly
+     * Makes appropriate use of conditionals
+   4. Main method
+     * Copied correctly
+     * Computes and prints the current day of the week
+
+Grade:   
+
+Comments from Graders:

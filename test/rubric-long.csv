@@ -1,0 +1,25 @@
+Major
+----;;Returns negative values for UTCDay
+--;;Doesn’t call UTCDay - why write a function if you don't use it?
+--;;dayOfWeek doesn’t return all days of the week
+++;;Great job!
+-;;Don't use pre-calculated constants for arithmetic without explaining where they came from
+-;;Many of your numerical conversions are inefficient
+-;;localDay should not cast to an int
+Observations
+~;;simplifying Thurs -> Sun adjustment (used if/else)
+Other
+-;;"Due to subtracting 3 after %7, you're going to get negative days, which will be a problem. See ""TestResults.txt"""
+-;;An else block could catch unexpected input and print an error message for debugging that can be helpful!
+--;;No added comments
+~;;Too much comments also makes code difficult to navigate/read! Try to just get at the Bare minimum of functionality/explanation.
+;;adding one
+;;Please create a minimal reproducible example, prefereably without dependencies on other packages like pandas. The code you posted is incomplete.
+;;adding three adding three adding three adding three adding three adding three adding three adding three adding three
+;;I've always assigned the command by configuring the scrollbars, not the canvas. Try replacing your lines:
+;;It doesn't seem to work either. Besides, I already have command=canvas.yview when I create the scrollbar, which is the same as yscrollbar.config(command=canvas.yview)
+;;It doesn't seem to work either. Besides, I already have command=canvas.yview when I create the scrollbar, which is the same as yscrollbar.config(command=canvas.yview)
+;;It doesn't seem to work either. Besides, I already have command=canvas.yview when I create the scrollbar, which is the same as yscrollbar.config(command=canvas.yview)
+;;It doesn't seem to work either. Besides, I already have command=canvas.yview when I create the scrollbar, which is the same as yscrollbar.config(command=canvas.yview)
+;;It doesn't seem to work either. Besides, I already have command=canvas.yview when I create the scrollbar, which is the same as yscrollbar.config(command=canvas.yview)
+;;It doesn't seem to work either. Besides, I already have command=canvas.yview when I create the scrollbar, which is the same as yscrollbar.config(command=canvas.yview)

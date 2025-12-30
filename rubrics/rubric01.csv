@@ -1,0 +1,21 @@
+Major
++;;Great job completing your first CS1 lab!
+--;goodbye.py;needs to be able to run without Syntax Errors
+----;goodbye.py; This file appears missing!
+--;goodbye.py; This goodbye code should be in its own file, not hello.py
+Minor
+-;hunt.py; Q1 answer was Kettle
+-;hunt.py; Q2 answer was Hyenas. You needed to dig through the text of files a bit more.
+-;hunt.py; Q3 answer was Dewey, Cheatham, and Howe. decode.py would decode the injustice.txt file
+-;hunt.py; Q4 answer was 19
+-;hunt.py; Q5 answer was 172
+-;hunt.py; Q6 answer was Rober Downey Jr.
+Observations
++;goodbye.py;Great descriptive variable names!
++;goodbye.py;Nice job exploring arithmetic operations
+~;;Variable names should be descriptive (sum, if calculating sum, etc.)
+~;; In the future, your return (and print) statements will need to match the capitalization, type, etc. as what's specified in the lab document.
++;goodbye.py; Good job having your print statement correctly describe the operator
+~;goodbye.py; Print statement should correctly describe the operation (sum: +, product: *) 
+~;; Readability would be increased by having blank lines around code chunks
+~;;Readability would be increased if you don't have text running off the side of the window (this is very true for comments going forward!)

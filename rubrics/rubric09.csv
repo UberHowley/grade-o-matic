@@ -1,0 +1,34 @@
+Other
+++;;Great job passing all the autotests!
++;BoggleCube;Looks good!
+-;;In-line comments are required for more complex code. You have some, but more is needed.
+-;;Protected attributes that start with an underscore should not be accessed from outside of the class!
+-;;super() isn't needed to call inherited methods when there's no ambiguity. Use self instead.
+-;;Not every method needs to return! Notice the docstrings/doctests and lab instructions.
+-;;In various locations, there's more loops than necessary. Aim for the most efficient code possible.
+-;;Using helper methods for repeated chunks of code would make code less redundant.
++;;Great use of helper methods to make clean code!
+DataLayer
+--;Part1;It was required to turn in something for Part 1, so that you could receive feedback.
+-;BoggleBoard;Instead of hardcoding 4 everywhere, should use Board.get_rows() or cols().
+~;BoggleBoard;You can use a dict to keep track of locations, but the keys of a dictionary should be immutable. BoggleCubes are mutable.
++;BoggleBoard._init_();Nice use of math to determine which CUBE_FACES to use!
++;BoggleBoard._init_();Nice use of arithmetic for figuring out which CUBE_FACES.
+--;BoggleBoard.shake_cubes();When you shake the cubes, their location changes and so you need to update your locations dictionary. This is likely causing the failed autotest in testq2_adjacent_again.
+~;BoggleBoard.adjacent();Return statement could be simplified by returning the boolean expression directly (or by using absolute value to condense statements into one).
+~;BoggleBoard.adjacent();Need to check that cube1 isn't the same cube as cube2 prior to checking adjacency.
+--;BoggleBoard.report_selection();It should not be possible to allow a cube to be selected more than once. This should likely be handled in BoggleBoard.report_selection().
+~;BoggleCube._init_();Should set self._board attribute to None in
+   initializer.
+-;BoggleCube.select();Should only report_selection if _board is not None.
++;BoggleCube;Otherwise, BoggleCube looks good!
+BoggleGame
+--;BoggleBoard;Use loops to generate BoggleCubes instead of hardcoding. Repetitive code means we have more efficient options!
+~;BoggleGame._init_();Should clear out green textlist and blue textbox at start.
+-;BoggleGame;Do not hardcode upper left corner of the CubeGraphic placement! Use Game.get_playarea_x() or y(), makes code more generalizable.
+-;BoggleGame;Instead of hardcoding 4 everywhere, should use Board.get_rows() or cols().
+-;BoggleGame;Helper methods for common actions, like resetting the board, could be helpful!
+--;BoggleGame;.click() is being called after the text boxes are updated, so the graphical game isn't updating correctly.
+--;BoggleGame;Use loops to generate CubeGraphics instead of hardcoding. Repetitive code means we have more efficient options!
+-;BoggleGame.handle_event();Remove debugging print statements before submitting code.
+

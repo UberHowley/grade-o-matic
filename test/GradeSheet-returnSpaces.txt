@@ -1,0 +1,32 @@
+GRADE SHEET FOR CS1 LAB 2 ("Day of the week")
+
+Requirements of this lab:
+   1. utc_day(time_value)
+     + Computes correctly
+     + Code is straightforward and readable
+     - Includes helpful comments
+   2. local_day(time_value, offset)
+     + Computes correctly
+     - Calls utc_day
+     - Includes helpful comments
+   3. day_of_week(day)
+     + Computes correctly
+     + Makes appropriate use of conditionals 
+   4. williamstown.py
+     + Copied correctly
+     + Computes and prints the current day of the week
+     
+Grade: B+ 
+
+Comments from Graders:
+
+- Make sure to put at least a couple comments in the code to describe
+the trickier parts. For instance, the following might be helpful to somebody
+reading the code for utc_day:
+  remainder = (days + 4) % 7  # we add 4 because Jan 1, 1970 is a Thursday
+We ask students to do this in order to develop the habit of commenting 
+less self-explanatory lines of code.
+- Observe that the lab description states "To help it compute the current day of
+the week, `local_day` should call the function `utc_day`." Code that re-uses
+existing functions is generally shorter, easier to maintain, and easier to
+understand.

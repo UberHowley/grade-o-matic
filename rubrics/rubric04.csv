@@ -1,0 +1,24 @@
+Ranked_Choice()
+--;ranked_choice(); This function should return a _new_ list, don't modify the original list!
+--; ranked_choice(); This function ends up in an infinite loop (see the timeout errors in TestResults).
+Majority()
+--; majority(); This function should call most_votes() so there isn't repeated code.
+-; majority(); Code needs to handle if most_votes() returns an empty list.
+Other
+--; borda_score(); The return values should not be hard-coded, it needs to be able to handle all sorts of inputs!
+-; least_votes(); Least_votes would be more generalizable if you initialized the min value to a known max, like len(votes), rather than an arbitrarily large number.
+~; count_appearances(); Repeated calls to this function can be avoided if you store its output in a variable.
+General
+--;; In-line comments (short, just above the code they're commenting) are _required_ for complex chunks of code.
+-;; More in-line comments, for complex chunks of code, would be great.
+--;; Docstrings (multi-line comments just under function headers) are required to describe the function inputs and outputs.
+-;; Looks like some additional Docstrings should be modified. Use them to describe the function inputs, outputs, and purpose.
+--; ; Some incorrect data types being returned. We provide example tests in the Lab Handout so you can see what expected output types are. It's helpful to place those in your Docstrings.
+--;runtests.py; In this lab, we required additional tests to be added. Testing code is an important computer science skill!
+-;runtests.py; Looks like some additional tests are required to be added. Try to test edge cases for your functions. 
+-;; Variable names should be more descriptive to make debugging and interpreting code easier.
+-;; Remember to remove debugging print(..) statements prior to submitting your work.
+~;; Longer, harder-to-read, lines of code should be split out into additional lines/variables to improve readability.
+~;; We typically use range(..) in a for..loop if we need location, otherwise it's preferred to iterate directly over the objects.
+-;; Do not overwrite values passed to a function as parameters. Those values should be used as given.
+

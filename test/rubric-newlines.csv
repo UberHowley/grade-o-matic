@@ -1,0 +1,14 @@
+Ranked_Choice()
+  --;ranked_choice(); This function should return a _new_ list, don't modify the original list!
+  ++;; "Testing a newline in here
+  "
+General
+*; general
+  ++;; "Code example could be like this.
+  `
+  def code(a):
+  	return 2+2*a
+  	`
+  "
+  --;runtests.py; In this lab, we required additional tests to be added. Testing code is an important computer science skill!
+

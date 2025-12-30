@@ -1,0 +1,15 @@
+Major
+----;;     Returns negative values for UTCDay
+--;;     Doesn’t call UTCDay - why write a function if you don't use it?
+++;;     Great job!
+-;test.py;     localDay should not cast to an int
+Observations
+~;;     simplifying Thurs -> Sun adjustment (used if/else)
+Other
+-;;"     Due to subtracting 3 after %7, you're going to get negative days, which will be a problem. See ""TestResults.txt"""
+--;test2.py;     No added comments
+~;;     Too much comments also makes code difficult to navigate/read! Try to just get at the Bare minimum of functionality/explanation.
+*;;     This is a super bullet
+   +;;   This is a sub bullet
+   -;;   This is another sub bullet
+      ~;;   Here is a sub-sub bullet.

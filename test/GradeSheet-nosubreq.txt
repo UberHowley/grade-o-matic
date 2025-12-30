@@ -1,0 +1,30 @@
+GRADE SHEET FOR CS1 LAB ("Retroshop"):
+     
+Requirements of this lab:
+   ~ Correctly implements the function flip_horizontal
+   + Correctly implements the function flip_vertical
+   +/~ Correctly implements the function invert
+   + Correctly implements the function transform_image 
+   ~ Correctly implements the green_screen function     
+   ~ Code makes good use of variable names, and is clear and readable
+   +/~ Comments are appropriately used to explain hard-to-follow logic
+   + Passes our tests
+
+Grade:   A
+
+
+Comments from Graders:
+- In flip_horizontal, the first line of code is unnecessary since image1
+   does not get used again.
++ Nice job with the one line flip_vertical()!
+- In invert(), 255 is already an integer so it is unnecessary to "assign an
+   integer type" to it. Variable "pixel" is also unnecessary; [pixel - y] in
+   line 70 can directly be written as [255 - y].
+- In green_screen, note that instructions say to create a new image. Though
+   a new variable img5 is created, img5 points to the same lists as foreground
+   such that changing img5 also changes foreground.
+- Use clearer variable names that better reflect what is going on in the
+   code, e.g. "x" and "y" are too generic, "img4" in invert does not actually
+   refer to an image but rather a row in an image.
+~ Too many comments also makes code difficult to navigate/read! Try to just
+   get at the bare minimum of functionality/explanation.

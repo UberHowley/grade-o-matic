@@ -1,0 +1,21 @@
+Major
+++;;     Great job on this non-trivial CS1 lab!
+----;;     utc_day returns negative values: Due to subtracting 3 after %7, you're going to get negative days, which will be a problem. utc_day_test4() should catch it in runtests.py
+--;;     local_day should call utc_day - why write a function if you don't use it? We avoid repetitive code!
+--;;     utc_day/local_day: neither of these should return a float, it should be an int
+--;;     day_of_week should [possibly] return all days of the week
+--;williamstown.py; this file needs to be written
+Minor
+-;;     Don't use pre-calculated constants for arithmetic without explaining where they came from
+-;;     Many numerical conversions are inefficient
+-;;     simplify the Thurs -> Sun adjustment in utc_day (used if/else instead of +4 before %7)
+-;;     local_day should not cast to an int, that should happen in utc_day
+Observations
+~;;     day_of_week should always return something
+~;;     Don't forget to add a test to the runtests.py file!
++;;     Nice job with the else block in catching unexpected input in day_of_week!
+Commenting
+--;;     Comments are needed for more complex chunks of code.
+~;;     Too much comments also makes code difficult to navigate/read! Try to just get at the bare minimum of functionality/explanation.
+~;;     Do not remove the docstrings (comments between the ''' ...''') at the top of functions: they're VERY useful!
+-;;     Unnecessary print() statements should be removed before submitting the assignment

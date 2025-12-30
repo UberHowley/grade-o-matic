@@ -1,0 +1,48 @@
+GRADE SHEET FOR CS1 LAB ("Retroshop"):
+     
+Requirements of this lab:
+   + Correctly implements the function flip_horizontal
+   + Correctly implements the function flip_vertical
+   + Correctly implements the function invert
+   + Correctly implements the function transform_image 
+   + Correctly implements the green_screen function     
+   ~ Code makes good use of variable names, and is clear and readable
+   - Comments are appropriately used to explain hard-to-follow logic
+   + Passes our tests
+
+Grade:   A-
+
+
+Comments from Graders: Good job! Code passes all tests
+* general
+   ~ the list comprehensions used to initialize the new_images are a complex
+   technique that have not been taught in this class - it's a good idea to
+   demonstrate a solid understanding of the concepts that have been presented 
+   in class rather than using other approaches that have not yet been covered
+   - docstrings (inside the """/""") should not be removed and should always be 
+   sandwiched between the function header and the code
+   ~ add brief, succinct comments preceding each logical block of code; these are
+   denoted with the # sign
+   ~ In python there are two approaches to for loops --> 
+      (1) use range and iterate over indices (which is necessary in green_screen
+         because knowing the index makes it possible to loop through two images
+         simultaneously)
+      (2) directly iterate over the elements if index location is not relevant 
+         * this is the more efficient approach for all the other retroshop functions
+         and would eliminate the need for the for loop that initializes each
+         element in the new_image with empty lists
+* flip_horizontal & flip_vertical
+   ~ fewer loops are needed if list slicing is used
+         `
+         def flip_horizontal(image):
+            new_image = []
+            for row in image:
+               new_image = new_image + [row[::-1]]
+            return new_image
+         
+         def flip_vertical(image):
+            return image[::-1]
+`
+
+
+   

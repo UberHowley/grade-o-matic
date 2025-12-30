@@ -1,0 +1,25 @@
+GRADE SHEET FOR CS1 LAB 2 ("Day of the week")
+
+Requirements of this lab:
+   1. UTCDay(timeval)
+     + Computes correctly (see testing below, and comments if failure)
+     ~ Code is straightforward and readable
+     + Includes helpful comments
+   2. localDay(timeval, offset)
+     + Computes correctly
+     + Calls UTCDay
+     + Includes helpful comments
+   3. dayOfWeek(day)
+     + Computes correctly
+     + Makes appropriate use of conditionals
+   4. Main method
+     + Copied correctly
+     + Computes and prints the current day of the week
+
+Grade:   B+
+
+Comments from Graders:
+++ Great work! Your code runs well and looks good. 
+- The only piece of clarity I think would be helpful is in your UTCDay function in which you used
+a large conditional where simple subtraction would have been applicable.
+* main.py: testing this format for a comment

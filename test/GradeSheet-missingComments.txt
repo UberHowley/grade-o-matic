@@ -1,0 +1,21 @@
+GRADE SHEET FOR CS1 LAB 2 ("Day of the week")
+
+Requirements of this lab:
+   1. utc_day(time_value)
+     + Computes correctly
+     + Code is straightforward and readable
+     + Includes helpful comments
+   2. local_day(time_value, offset)
+     + Computes correctly
+     + Calls utc_day
+     - Includes helpful comments
+   3. day_of_week(day)
+     + Computes correctly
+     + Makes appropriate use of conditionals 
+   4. williamstown.py
+     + Copied correctly
+     + Computes and prints the current day of the week
+     
+Grade: A
+
+Good work!

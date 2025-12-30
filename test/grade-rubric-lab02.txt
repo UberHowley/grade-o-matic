@@ -1,0 +1,38 @@
+Mostly good (17 A … 4 A- … 1 B+ … 1 B- … 1 E).
+
+This is the summary of my final “rubric”:
+Major:
+		returns negative values for UTCDay (major x2)
+		doesn’t call UTCDay
+		no added comments
+		dayOfWeek doesn’t return all days of the week
+Minor:
+		uses pre-calculated constants for arithmetic without explaining where they came from
+		inefficient conversions
+		casts to int in localDay
+Comment:
+		dayOfWeek should always return something
+		simplifying Thurs → Sun adjustment (used if/else)
+		funky imports
+		
+Good start, but some issues related to repetitive code: 
+if you write a function, you should use it (i.e., UTCDay)! 
+
+Good start, but due to subtracting 3 after %7, you're going to get negative
+days, which will be a problem. See "TestResults.txt"
+
+Good start, but some issues related to repetitive code & negative days: 
+If you write a function, you should use it (i.e., UTCDay)! 
+Due to subtracting 3 after %7, you're going to get negative
+days, which will be a problem. See "TestResults.txt"
+
+Remember to update the Collaboration Line in the README.
+
+Small note: comments only have to be one/two lines long and not necessarily complete sentences.
+Too much comments also makes code difficult to navigate/read! Try to just get at the
+Bare minimum of functionality/explanation.
+
+    #$ An else block could catch unexpected input and print
+    #$ an error message for debugging.
+
+

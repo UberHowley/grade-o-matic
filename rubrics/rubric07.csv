@@ -1,0 +1,32 @@
+Other
+++;;Great job passing all the autotests!
++;;Nice choice of base cases!
++;;Nice use of in-line comments!
+--;;In-line comments are required for complex code.
+~;;Accumulation does not happen in variables so much in recursion as it does in the return statements. No need to declare an accumulator variable at top of function.
+sum_digits()
+--;digits();Base case should catch when num is less than 10, then return that num!
+--;digits();Don't convert the num to a str. Use // and % arithmetic instead.
+--;digits();Needs to return the sum of the digits.
+~;digits();Code could have one fewer recursive call if base case is for one digit number & return num, rather than 0.
+bedtime_story()
+--;bedtime();Base case should check that there's fewer than 2 characters and return empty list.
+-;bedtime();Second base case of 2 characters isn't needed.
+--;bedtime();Needs to return a list of strings representing the story.
+nested_squares()
+-;squares();Function should be invariant, return it to where it started!
+--;squares();Base case should check that size < gap*2, don't draw anything & return 0.
+--;squares();Needs to return the number squares drawn, one per function frame!
+-;squares();While function would draw correctly without being invariant, the lab doc asked that turtle return to where it started! This explains the TestResults error.
+draw_quilt()
+-;quilt();Function should be invariant, return it to where it started!
+--;quilt();Base case should check that quilt is less than patch_size, draw last square & return 1.
+--;quilt();Needs to return number squares drawn, 2 per function frame, plus whatever the recursive calls draw!
+~;quilt();quilt_size//2 used often enough, it could be a good variable.
+-;quilt(); Need to draw quilt as quadrants (2 separate small squares + 2 nested quilts), not one big square! (Otherwise, why add 2 to the return count?)
+shrub()
++;shrub();Good job making this one invariant!
+-;shrub();Function should be invariant, return it to where it started!
+--;shrub();Base case should check that branch is less than min, and return 0.
+--;shrub();Need to return _length_ of branches drawn, one per function frame!
+~;testq4_shrub_test2();This stems from a <= instead of a < base case condition. Not an issue.

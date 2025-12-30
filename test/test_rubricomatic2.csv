@@ -1,0 +1,27 @@
+Major
+----;;Returns negative values for UTCDay
+--;;Doesn’t call UTCDay - why write a function if you don't use it?
+--;;dayOfWeek doesn’t return all days of the week
+++;;Great job!
+Minor
+-;; Good start, but some minor issues: 
+-;;Don't use pre-calculated constants for arithmetic without explaining where they came from
+-;;Many of your numerical conversions are inefficient
+-;;localDay should not cast to an int
+Observations
+~;;dayOfWeek should always return something
+~;;simplifying Thurs -> Sun adjustment (used if/else)
+~;;You've imported some modules you don't need, might want to review your VSCode preferences	
+Other
+-;;If you write a function, you should use it (i.e., UTCDay)! 
+-;;"Due to subtracting 3 after %7, you're going to get negative days, which will be a problem. See ""TestResults.txt"""
+-;;Good start, but some issues related to repetitive code & negative days 
+-;;An else block could catch unexpected input and print an error message for debugging that can be helpful!
+Commenting
+--;;No added comments
+~;;Remember to update the Collaboration Line in the README.
+~;;Too much comments also makes code difficult to navigate/read! Try to just get at the Bare minimum of functionality/explanation.
+~;;Small note: comments only have to be one/two lines long and not necessarily complete sentences.
+;files.py;just a filename
+;;test.py filename no colon
+----;file.py;four dashes and filename

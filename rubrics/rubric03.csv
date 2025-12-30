@@ -1,0 +1,22 @@
+Major
+++;;    Great job on this non-trivial CS1 lab!
++;;     Good variable names throughout.
++;;     Nice job with the one line flip_vertical()!
++;;     green_screen() is nice and succinct.
+Minor
+-;;     The code could be a lot more efficient with fewer loops.
+-;;     flip_vertical(): Sequences do not need to be manually reversed. [::-1] will do that.
+-;;     transform_img: an if isn't needed to determine which function to apply: iterate over transforms
+Observations
+~;;     Meaningful, descriptive variable names would make code much easier to read/debug
+~;;     range() is really only needed in greenscreen, where you need the pixel locations. All other functions can iterate directly over the elements.
+~;;     flip_vertical() can be just one line
+~;;     flip_horizontal(): the 2 lines in the loop body can be converted to one.
+~;;     greenscreen(): The default start index for range() is 0. No need to explicitly state it.
+Commenting
+--;;     Comments are needed for more complex chunks of code.
+~;;     Too many comments also makes code difficult to navigate/read! Try to just get at the bare minimum of functionality/explanation.
+~;;     On commenting: if an in-line comments goes off the screen, place it _above_ the code its commenting, and if it's still long, give it a second line
+~;;     Do not remove the docstrings (comments between the ''' ...''') at the top of functions: they're VERY useful!
+-;;     Unnecessary print() statements should be removed before submitting the assignment
+

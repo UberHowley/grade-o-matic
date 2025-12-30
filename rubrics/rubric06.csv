@@ -1,0 +1,27 @@
+General
+++;;Great job passing the tests!
++;plot_letter(); Nice job converting the alphabet from string to list!
+--;;There must be in-line comments, especially for complex bits of code.
+~;;Try to ensure that comments are never more than 80 characters long!
+----;;Dictionaries are great because of how quickly we can access values via their keys. We don't need typically need extra indexing structures to access values in a dictionary, just the keys as index!
+--;runtests.py;It was required to write tests for questions 1-3
+-;runtests.py; example_year_db2(): Need to add data (likely so you can test missing years/names).
+PreLab
+--;;split or trim didn't pass our unit tests - it's important to test your functions before using them. Come to student help hours if you don't know how!
+-;split();Works, except for proper handling of splitting an empty string.
+-;trim();Removes the newline at the end, but also removes other whitespace.
+frequency_functions
++;name_freq();Good job iterating over each year in years!
+--;name_frequency();Must check that a key exists in the dictionary before accessing it.
+-;name_frequency();When a name does not exist in the dict, it makes more sense to add a 0 to the output list.
+-;name_frequency();It's more efficient to iterate over the arg years, and use that as keys, rather than check each key in year_table if it matches a given year (this may also return data out of order!)
+--;letter_frequency();Must return a list of 26 counts, not just the counts of letters that exist in the given dict.
+--;letter_freq();Using nested loops inefficient here: iterate over names in name_table, adding first char count to letter_freqs dict. Then at end, make list by iterating over sorted(letter_freqs).
+-~;letter_frequency(); Remember, dictionaries are not ordered! For small values like what we have here, they _appear_ sorted, but this may not always be the case. It's a good idea to iterate over sorted(letter_freq) as the keys so you _know_ the list you produce is grabbing values in the correct order.
+++;letter_frequency();Nice job ensuring the dict output is sorted!
+Plotting
+-;;Frequency counts should be on the Y-axis, the other data is the X-axis.
++;;Good job calling functions previously written in the plotting functions!
+-;plot_name_freq();No need to loop of years for y-values. Just use years directly!
++;plot_letter_freq();Nice call on list('ABC...XYZ')!
+~;plot_letter_freq();list('ABC...XYZ') might be simpler!

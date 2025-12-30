@@ -1,0 +1,26 @@
+Other
+++;;Great job passing all the autotests!
++;;Nice use of in-line comments!
+--;;In-line comments are required for more complex code.
+-;;Added an attribute that's not needed (like self.corpus). Why store this?
+~;;It's often best to use the getter/accessor method within the class, rather than accessing the attributes directly.
+-;;Protected attributes that start with an underscore should not be accessed from outside of the class!
+-;;Single characters are not meaningful variable names. Use more descriptive names.
+FreqWord
+~;FreqWord._init_();Do not need to cast count to an int, as it should already be passed to the method as an integer (see docstring).
+--;FreqWord.has_prefix();The suggested str.startswith(..) method is significantly more efficient than 'in', and also more accurate - only want to check the beginning!
+--;FreqWord.matches_pattern();Fails the autotest here because you need to check length is the same, or else they don't match!
+-;FreqWord.matches_pattern();Matching could be simplified: Single loop where you check if 2 characters are equal, or if pattern is a wildcard character.
+~;FreqWord._str_();using the str.format(..) method could also work nicely here, instead of concatenation!
+AutoComplete
+-;AutoComplete._init_();Count should be cast to an int before being passed to FreqWord initializer.
+~;AutoComplete._init_();It's better to exit the 'with open() as' block as soon as you're done with the file, meaning it's slightly preferred to have the return statement outside of the 'with' block.
+-;AutoComplete._match_words();Matching could be simplified: Single loop
+   where you use matches_pattern if '.' in criteria, and has_prefix otherwise.
+-;AutoComplete.suggest_comp();Don't need to check that length of new_list > 3 in order to slice!
+~;AutoComplete._str_();A list comprehension could make the converting to a string version a little more succinct.
+~;AutoComplete._str_();Using '\n'.join(lst) could be more succinct for combining the list of strings into a single string and would also avoid the extra newline at the end that is causing a failed autotest.
++;AutoComplete._str_();Nice use of list comprehension!
+Result
+~;Result._str_();Using '|'.join([]) string method would  avoid the error that shows in TestResults.txt, so you wouldn't have to handle a word without results specially.
++;Result._str_();Nice use of str.join! A list comprehension could make converting the items to a list of str more succinct.

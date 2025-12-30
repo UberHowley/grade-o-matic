@@ -1,0 +1,39 @@
+GRADE SHEET FOR CS1 LAB 1
+
+Welcome to Computer Science!
+     
+Requirements of this lab
+  1. Completed a first program
+      + hello.py prints "hello, world!" message
+      + comment at top
+  2. Created a new program to input two numbers and print sum
+      + goodbye.py added 
+      + program inputs numbers correctly
+      + program computes and prints their sum
+  3. Completed an AboutMe.txt
+      + a few sentences about you
+      + a few sentences about your hometown
+      + a great place to eat
+      + answers from the scavenger hunt
+      
+Grade:    A
+
+Comments from Graders: 
+
++ Great job completing your first CS 134 lab!
++      Great descriptive variable names!
+~ goodbye.py: Print statement should correctly describe the operation (sum:+, product: *)
+~  In the future, your return (and print) statements will need to match the
+   capitalization, type, etc. as what's specified in the lab document.
+~  In the future, your return (and print) statements will need to match the
+   capitalization, type, etc. as what's specified in the lab document.
++ goodbye.py: Great descriptive variable names!
+- hunt.py: Q5 answer was 172
+   - hunt.py: Q3 answer was Dewey, Cheatham, and Howe. decode.py would decode
+   the injustice.txt file
+---- goodbye.py: This file appears missing!
+---- goodbye.py: This file appears missing!
+-- goodbye.py: needs to be able to run without Syntax Errors
++ goodbye.py: Nice job exploring arithmetic operations
+~  In the future, your return (and print) statements will need to match the
+   capitalization, type, etc. as what's specified in the lab document.
